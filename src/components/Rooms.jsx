@@ -7,13 +7,16 @@ function Rooms() {
 
     return (
       <div>
+        <h1>Welcome to AMA HOTEL</h1>
+        <p>Would you like to book a room?</p>
+        <Button variant="info">Book Room</Button>
         <ButtonToolbar>
           <Button>
             Add Room
-          
-          {/* <AddRoomModal  /> */}
+            {/* <AddRoomModal  /> */}
           </Button>
         </ButtonToolbar>
+
         <div className="rooms">
           <Card style={{ width: "18rem" }}>
             <Card.Img
