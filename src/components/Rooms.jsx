@@ -1,10 +1,19 @@
-import React from 'react'
-import {Card, Button} from "react-bootstrap";
-// import {mg1, room2, room3} from '.../public/images'
+// import {useState} from 'react'
+import {Card, Button, ButtonToolbar} from "react-bootstrap";
+// import AddRoomModal from './AddRoomModal';
+
 
 function Rooms() {
+
     return (
       <div>
+        <ButtonToolbar>
+          <Button>
+            Add Room
+          
+          {/* <AddRoomModal  /> */}
+          </Button>
+        </ButtonToolbar>
         <div className="rooms">
           <Card style={{ width: "18rem" }}>
             <Card.Img
@@ -20,7 +29,8 @@ function Rooms() {
                 <br />
                 Price per room: Ugx 20,000/=
               </Card.Text>
-              <Button variant="primary">Book</Button>
+              <Button variant="success">Edit</Button>
+              <Button variant="danger">Delete</Button>
             </Card.Body>
           </Card>
           <Card style={{ width: "18rem" }}>
@@ -32,7 +42,8 @@ function Rooms() {
                 <br />
                 Price per room: Ugx 100,000/=
               </Card.Text>
-              <Button variant="primary">Book</Button>
+              <Button variant="success">Edit</Button>
+              <Button variant="danger">Delete</Button>
             </Card.Body>
           </Card>
           <Card style={{ width: "18rem" }}>
@@ -45,7 +56,8 @@ function Rooms() {
                 <br />
                 Price per room: Ugx 120,000/=
               </Card.Text>
-              <Button variant="primary">Book</Button>
+              <Button variant="success">Edit</Button>
+              <Button variant="danger">Delete</Button>
             </Card.Body>
           </Card>
         </div>
